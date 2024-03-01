@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1><img src="./images/logo.svg" alt="Website Logo: snap" /></h1>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <div class="wrapper-nav">
+          <p class="nav-item">Features</p>
+          <p class="nav-item">Company</p>
+          <a href="#" class="nav-item">Careers</a>
+          <a href="#" class="nav-item">About</a>
+        </div>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="header-right">
+        <div class="wrapper-nav" id="login-register">
+          <a href="#" class="nav-item">Login</a>
+          <a href="#" class="nav-item">Register</a>
+        </div>
 
-  Features
-  Company
-  Careers
-  About
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main>
+      <article>
+        <h2 class="title">Make remote work</h2>
+        <p class="description">
+          Get your team in sync, no matter your location.
+          Streamline processes, create team rituals, and
+          watch productivity soar.
+        </p>
+        <a href="#">
+          <button class="btn">Learn more</button>
+        </a>
+        <div class="wrapper-img">
+          <img src="./images/client-databiz.svg" alt="Databiz company logo">
+          <img src="./images/client-audiophile.svg" alt="Audiophile company logo">
+          <img src="./images/client-meet.svg" alt="Meet company logo">
+          <img src="./images/client-maker.svg" alt="Maker company logo">
+        </div>
+      </article>
+      <picture>
+        <img src="./images/image-hero-desktop.png" alt="Person typing on a laptop">
+      </picture>
+    </main>
+  </body>
 </html>
