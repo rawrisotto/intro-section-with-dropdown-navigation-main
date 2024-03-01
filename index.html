@@ -9,6 +9,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -17,8 +24,8 @@
         <h1><img src="./images/logo.svg" alt="Website Logo: snap" /></h1>
 
         <div class="wrapper-nav">
-          <p class="nav-item">Features</p>
-          <p class="nav-item">Company</p>
+          <p class="nav-item dropdown">Features</p>
+          <p class="nav-item dropdown">Company</p>
           <a href="#" class="nav-item">Careers</a>
           <a href="#" class="nav-item">About</a>
         </div>
@@ -27,7 +34,7 @@
       <div class="header-right">
         <div class="wrapper-nav" id="login-register">
           <a href="#" class="nav-item">Login</a>
-          <a href="#" class="nav-item">Register</a>
+          <a href="#" class="nav-item" id="register">Register</a>
         </div>
 
         <div class="hamburger-menu">
@@ -42,22 +49,27 @@
       <article>
         <h2 class="title">Make remote work</h2>
         <p class="description">
-          Get your team in sync, no matter your location.
-          Streamline processes, create team rituals, and
-          watch productivity soar.
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
         </p>
         <a href="#">
           <button class="btn">Learn more</button>
         </a>
         <div class="wrapper-img">
-          <img src="./images/client-databiz.svg" alt="Databiz company logo">
-          <img src="./images/client-audiophile.svg" alt="Audiophile company logo">
-          <img src="./images/client-meet.svg" alt="Meet company logo">
-          <img src="./images/client-maker.svg" alt="Maker company logo">
+          <img src="./images/client-databiz.svg" alt="Databiz company logo" />
+          <img
+            src="./images/client-audiophile.svg"
+            alt="Audiophile company logo"
+          />
+          <img src="./images/client-meet.svg" alt="Meet company logo" />
+          <img src="./images/client-maker.svg" alt="Maker company logo" />
         </div>
       </article>
       <picture>
-        <img src="./images/image-hero-desktop.png" alt="Person typing on a laptop">
+        <img
+          src="./images/image-hero-desktop.png"
+          alt="Person typing on a laptop"
+        />
       </picture>
     </main>
   </body>
