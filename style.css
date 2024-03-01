@@ -2,16 +2,18 @@
 /*
     1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 /*
     2. Remove default margin
 */
 * {
-    margin: 0;
-    padding: 0;
-    font: inherit;
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 /*
     Typographic tweaks!
@@ -19,106 +21,154 @@
     4. Improve text rendering
 */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 /*
     5. Improve media defaults
 */
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 /*
     6. Remove built-in form typography styles
 */
-input, button, textarea, select {
-    font: inherit;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 /*
     7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 :root {
-    --clr-almostWhite: hsl(0, 0%, 98%);
-    --clr-mediumGray: hsl(0, 0%, 41%);
-    --clr-almost-black: hsl(0, 0%, 8%);
+  --clr-almostWhite: hsl(0, 0%, 98%);
+  --clr-mediumGray: hsl(0, 0%, 41%);
+  --clr-almost-black: hsl(0, 0%, 8%);
 
-    --ff-base: 'Epilogue', sans-serif;
-    --fw-500: 500;
-    --fw-700: 700;
+  --ff-base: "Epilogue", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
 }
 
 /* General Styles */
-body, html {
-    width: 100vw;
-    min-height: 100vh;
-    font-family: var(--ff-base);
-    font-weight: var(--fw-500);
+body,
+html {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-500);
 }
 
 header {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1rem;
 }
 /* padding to 2remm 2.5rem when in desktop mode */
 
 /* Navbar Styles */
 .header-left {
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
 .header-right {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .wrapper-nav {
-    display: none;
-    align-items: center;
-    gap: 2rem;
+  display: none;
+  align-items: center;
+  gap: 2rem;
 }
 /* display to flex when in desktop mode */
 
 .nav-item {
-    text-decoration: none;
-    color: var(--clr-mediumGray);
+  text-decoration: none;
+  color: var(--clr-mediumGray);
 }
 
 .nav-item:hover {
-    color: var(--clr-almost-black);
-    cursor: pointer;
+  color: var(--clr-almost-black);
+  cursor: pointer;
 }
 
 .dropdown::after {
-    content: url("./images/icon-arrow-down.svg");
-    margin-left: 0.5rem;
+  content: url("./images/icon-arrow-down.svg");
+  margin-left: 0.5rem;
 }
 
 .dropdown:active::after {
-    content: url("./images/icon-arrow-up.svg");
+  content: url("./images/icon-arrow-up.svg");
 }
 
 #register {
-    border: 1px solid var(--clr-almost-black);
-    border-radius: 1rem;
-    padding: 0.5rem 1.25rem;
+  border: 1px solid var(--clr-almost-black);
+  border-radius: 1rem;
+  padding: 0.5rem 1.25rem;
 }
 
 .hamburger-menu {
-    cursor: pointer;
+  cursor: pointer;
+  z-index: 10;
+  right: 20px;
+  top: 25px;
+  position: absolute;
 }
 
 .hamburger-menu span {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: var(--clr-almost-black);
-    margin: 0 0 6px 0;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--clr-almost-black);
+  margin: 0 0 6px 0;
+}
+
+.mobile-menu {
+  width: 65%;
+  min-height: 100vh;
+  position: absolute;
+  background-color: var(--clr-almostWhite);
+  border: 1px solid var(--clr-almost-black);
+  right: 0;
+  top: 0;
+
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-login-register {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  width: 100vw;
 }
