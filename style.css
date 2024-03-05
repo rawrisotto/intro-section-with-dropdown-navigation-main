@@ -81,7 +81,25 @@ header {
   align-items: center;
   padding: 1.5rem 1rem;
 }
-/* padding to 2remm 2.5rem when in desktop mode */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+picture {
+  order: 1;
+}
+
+article {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
 
 /* Navbar Styles */
 .header-left {
@@ -100,11 +118,13 @@ header {
   align-items: center;
   gap: 2rem;
 }
-/* display to flex when in desktop mode */
 
 .nav-item {
   text-decoration: none;
   color: var(--clr-mediumGray);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .nav-item:hover {
@@ -114,7 +134,6 @@ header {
 
 .dropdown::after {
   content: url("./images/icon-arrow-down.svg");
-  margin-left: 0.5rem;
 }
 
 .dropdown:active::after {
@@ -127,6 +146,7 @@ header {
   padding: 0.5rem 1.25rem;
 }
 
+/* Mobile Menu */
 .hamburger-menu {
   cursor: pointer;
   z-index: 10;
@@ -156,6 +176,8 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  display: none;
 }
 
 .mobile-login-register {
@@ -171,4 +193,68 @@ header {
   background: rgba(0, 0, 0, 0.6);
   min-height: 100vh;
   width: 100vw;
+
+  display: none;
+}
+
+.dropdown-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.icon {
+    height: 1.5rem;
+}
+
+#icon-todo {
+  list-style-image: url("./images/icon-todo.svg");
+}
+
+#icon-calendar {
+  list-style-image: url("./images/icon-calendar.svg");
+}
+
+#icon-reminder {
+  list-style-image: url("./images/icon-reminder.svg");
+}
+
+
+/* Main Styles */
+#hero-img {
+  content: url("./images/image-hero-mobile.png");
+  width: 100%;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: var(--fw-700);
+}
+
+.description {
+  color: var(--clr-mediumGray);
+}
+
+.btn {
+  background-color: var(--clr-almost-black);
+  color: var(--clr-almostWhite);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.wrapper-img {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.125rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-img {
+  width: 65px;
+  height: 100%;
 }
