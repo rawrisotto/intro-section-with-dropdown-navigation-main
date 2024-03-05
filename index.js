@@ -15,12 +15,25 @@ window.addEventListener("resize", () => {
     overlay.classList.toggle("active");
     mobileMenu.classList.toggle("active");
   }
+
+  if (window.innerWidth < 950 || window.innerWidth >= 950) {
+    dropdownWrapper.forEach((item) => {
+      if (item.classList.contains("active")) {
+        const dropdown = item.querySelector(".dropdown");
+        const dropdownItems = item.querySelector(".dropdown-items");
+        item.classList.toggle("active");
+        dropdown.classList.toggle("active");
+        dropdownItems.classList.toggle("active");
+      }
+    });
+  }
 });
 
 dropdownWrapper.forEach((item) => {
   item.addEventListener("click", () => {
     const dropdown = item.querySelector(".dropdown");
     const dropdownItems = item.querySelector(".dropdown-items");
+    item.classList.toggle("active");
     dropdown.classList.toggle("active");
     dropdownItems.classList.toggle("active");
   });
