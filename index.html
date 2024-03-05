@@ -20,7 +20,7 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <div class="overlay"></div>
+    <div class="overlay" id="overlay"></div>
     <header>
       <div class="header-left">
         <h1><img src="./images/logo.svg" alt="Website Logo: snap" /></h1>
@@ -39,14 +39,15 @@
           <a href="#" class="nav-item" id="register">Register</a>
         </div>
 
-        <div class="hamburger-menu">
+        <!-- <div class="hamburger-menu">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div> -->
+        <span class="hamburger-menu" id="hamburger-menu" />
       </div>
 
-      <div class="mobile-menu">
+      <div class="mobile-menu" id="mobile-menu">
         <p class="nav-item dropdown">Features</p>
         <!-- <div class="dropdown-items">
           <a href="#" class="nav-item"><img class="icon" src="./images/icon-todo.svg" alt="Todo list icon">Todo List</a>
@@ -107,5 +108,7 @@
         <img id="hero-img" />
       </picture>
     </main>
+
+    <script src="index.js"></script>
   </body>
 </html>
