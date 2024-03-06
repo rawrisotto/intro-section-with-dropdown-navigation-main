@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/rawrisotto/intro-section-with-dropdown-navigation-main)
-- Live Site URL: [Netlify](https://65e7b06a346bf98a56af381e--calm-madeleine-26ae9c.netlify.app/)
+- Live Site URL: [Netlify](https://65e7b7aeaab5860008de5ab2--calm-madeleine-26ae9c.netlify.app/)
 
 ## My process
 
