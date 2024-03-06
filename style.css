@@ -277,7 +277,6 @@ article {
 
 /* Main Styles */
 #hero-img {
-  content: url("./images/image-hero-mobile.png");
   width: 100%;
 }
 
@@ -297,6 +296,7 @@ article {
   border: 1px solid var(--clr-almost-black);
   border-radius: 1rem;
   cursor: pointer;
+  width: fit-content;
 }
 
 .btn:hover {
