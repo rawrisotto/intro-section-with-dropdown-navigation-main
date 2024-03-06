@@ -169,7 +169,7 @@ article {
   background-color: var(--clr-almostWhite);
 }
 
-#register {
+.register {
   border: 1px solid var(--clr-almost-black);
   border-radius: 1rem;
   padding: 0.5rem 1.25rem;
@@ -259,19 +259,19 @@ article {
   max-height: 100%;
 }
 
-#icon-todo {
+.icon-todo {
   background: url("./images/icon-todo.svg") no-repeat;
 }
 
-#icon-calendar {
+.icon-calendar {
   background: url("./images/icon-calendar.svg") no-repeat;
 }
 
-#icon-reminder {
+.icon-reminder {
   background: url("./images/icon-reminders.svg") no-repeat;
 }
 
-#icon-planning {
+.icon-planning {
   background: url("./images/icon-planning.svg") no-repeat;
 }
 
